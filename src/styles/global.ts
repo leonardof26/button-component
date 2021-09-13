@@ -18,6 +18,8 @@ export default createGlobalStyle`
     --danger-text: #fff;
     --danger-hover: #9A0007;
 
+    --text-hover: #2962FF1A;
+
     --disabled-color: #9e9e9e;
   }
 

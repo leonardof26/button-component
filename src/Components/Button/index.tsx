@@ -38,7 +38,7 @@ function Button({
   )
 }
 
-export default Button
+export { Button }
 
 Button.defaultProps = {
   variant: 'default',

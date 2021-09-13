@@ -34,6 +34,12 @@ const padding = {
   lg: '0.6875rem 1.375rem',
 }
 
+function getHoverBg(props: ButtonProps) {
+  if (props.disableShadow) return 'default'
+  if (props.variant === 'default') return hoverColor[props.color]
+  return 'var(--text-hover)'
+}
+
 export const Container = styled.button<ButtonProps>`
   display: flex;
   align-content: center;
@@ -50,13 +56,13 @@ export const Container = styled.button<ButtonProps>`
 
   background: ${(props) =>
     props.variant === 'default' ? backgroundColor[props.color] : 'none'};
-  color: ${(props) => textColor[props.color]};
+  color: ${(props) =>
+    props.variant === 'default' ? textColor[props.color] : 'var(--primary-bg)'};
   transition: background 0.2s;
 
   :enabled:hover,
   :enabled:focus {
-    background: ${(props) =>
-      props.disableShadow ? 'default' : hoverColor[props.color]};
+    background: ${(props) => getHoverBg(props)};
   }
 
   :disabled {
