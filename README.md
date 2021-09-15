@@ -5,6 +5,7 @@ This project is a challenge from devChallenges which consists in creating a uive
 The project was bootstap using create react app and made using React and Styled Components.
 
 The challenge description can be found in https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY
+You can see a Demo of the challenge on https://6141e73939cf64003a4a9cbc-gzlzhliahb.chromatic.com/?path=/story/example-button--default
 
 # How to run the project
 
